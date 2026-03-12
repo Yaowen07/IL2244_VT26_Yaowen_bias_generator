@@ -1,0 +1,75 @@
+// VerilogA for BIAS, bias, veriloga
+
+`include "disciplines.vams"
+`include "constants.vams"
+
+module bias(vdda, gnda, vbg_in, ibias_in, resext, en, iout1, iout2, vref_out);
+    
+    //Port Declarations
+    inout vdda, gnda;      // Power supply and ground
+    inout vbg_in;          // Bandgap reference input 
+    inout ibias_in;        // Op-amp bias input
+    inout resext;          // External reference resistor pin
+    inout en;              // Enable signal
+    
+    inout iout1, iout2;    // Two source current outputs
+    inout vref_out;        // VDD/2 reference voltage output
+    
+
+    electrical vdda, gnda, vbg_in, ibias_in, resext, en, iout1, iout2, vref_out;
+    
+    //Parameter Definitions
+    parameter real vth_en  = 0.9;  // Threshold voltage for the enable signal
+    parameter real M1      = 1.0;  // Current mirror ratio for iout1
+    parameter real M2      = 2.0;  // Current mirror ratio for iout2
+    
+    parameter real R_out_v = 100;  // Equivalent output resistance for voltage buffer
+    parameter real R_out_i = 100G; // Equivalent parallel resistance for current sources
+
+    // Internal variables
+    real vbg_val, en_val, vdd_val, ibias_val;
+    real i_ref;
+    real target_vref;
+
+    analog begin
+        vbg_val   = V(vbg_in, gnda);
+        vdd_val   = V(vdda, gnda);
+        en_val    = V(en, gnda);
+        ibias_val = V(ibias_in, gnda);
+        
+        @(cross(en_val - vth_en, 0));
+        // Accurately capture the moment bandgap voltage crosses 0.1V (startup)
+        @(cross(vbg_val - 0.1, +1)); 
+        // Simulate a tiny leakage current to ground for the internal op-amp bias pin
+        I(ibias_in, gnda) <+ V(ibias_in, gnda) / 50k;
+
+
+        if ((en_val > vth_en) && (vbg_val > 0.1) && (ibias_val > 0.1)) begin            
+            // V-to-I Conversion Logic
+            V(resext, gnda) <+ vbg_val;
+            // Measure the actual current flowing through the external resistor
+            i_ref = abs(I(resext, gnda));
+            // Target Voltage Output
+            target_vref = vdd_val / 2.0;
+            
+        end else begin
+            // Release the RESEXT pin 
+            I(resext, gnda) <+ 0.0;            
+            // Reset internal reference current and target voltage
+            i_ref = 0.0;
+            target_vref = 0.0;
+        end
+
+        //Output Stage
+        // 1. VDD/2 Reference Voltage Output (with load regulation / IR drop)
+        I(vref_out, gnda) <+ (V(vref_out, gnda) - target_vref) / R_out_v;
+
+        // 2. Multiple Source Current Outputs (PMOS Current Mirrors)
+        I(vdda, iout1) <+ i_ref * M1;
+        I(iout1, vdda) <+ V(iout1, vdda) / R_out_i; // Simulate finite output impedance
+
+        I(vdda, iout2) <+ i_ref * M2;
+        I(iout2, vdda) <+ V(iout2, vdda) / R_out_i;
+        
+    end
+endmodule
