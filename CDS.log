@@ -1,0 +1,4186 @@
+\# Program start time:     UTC 2026.03.10 21:22:46.952
+\# Local time: UTC (UTC+00:00) 2026.03.10 21:22:46.952
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
+\o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
+\# Command line:	/opt/tools/cadence/installs/IC618/tools/dfII/bin/64bit/virtuoso
+\# Host name (type):	il2244vt26_yaowenf (x86_64)
+\# Operating system:	Linux 5.15.0-164-generic #174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:1.0 (1536x889)
+\# Available geometry:			TL(0:27) BR(1535:888)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x1c00000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	      1,385 MB
+\# Available memory:	  2,832,557 MB
+\# System memory:	  3,104,512 MB
+\# Maximum memory size:	  3,103,248 MB
+\# Max mem available:	  2,832,678 MB
+\# Initial memory used:	        122 MB
+\#        process size:	      1,702 MB
+\# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 48.00/48.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		yaowenf
+\o Working Directory:	il2244vt26_yaowenf:/home/yaowenf/bias/AMS_35_V4_MINIMAL
+\# Process Id:		522710
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\# [21:22:46.445322] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+\w *WARNING* LIB MINIMAL_CORE from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 64 redefines
+\w LIB MINIMAL_CORE from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_IO from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 65 redefines
+\w LIB MINIMAL_IO from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_TOP from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 66 redefines
+\w LIB MINIMAL_TOP from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/saul/projects/AMS35_DIG/test_mix/virtuoso/COUNTER_TESTS' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'COUNTER_TESTS'.
+\w *WARNING* The directory: '/home/saul/projects/TEST_AMS45_V4/TEST_PDK' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'TEST_PDK'.
+\# Memory report: using         234 MB, process size 1,894 MB at UTC 2026.03.10 21:22:50.117
+\w *WARNING* The directory: '/opt/pdk/ams/examples/EXAMPLES_PowerSupplyC35B3_IC6/EXAMPLES_IO_C35B3_IC6' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'EXAMPLES_IO_C35B3_IC6'.
+\o ......................................................................................
+\o            ams AG HIT-Kit v.ams_4.10
+\o ......................................................................................
+\o COPYRIGHT (c) 2012 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This HIT-Kit and attached documentation are confidential information and may 
+\o only be used as authorized by the HIT-Kit license agreement.
+\o ......................................................................................
+\# Current Window: window(2)
+\o Loading simulator default settings.
+\w *WARNING* LIB MINIMAL_CORE from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 64 redefines
+\w LIB MINIMAL_CORE from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_IO from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 65 redefines
+\w LIB MINIMAL_IO from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_TOP from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 66 redefines
+\w LIB MINIMAL_TOP from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/saul/projects/AMS35_DIG/test_mix/virtuoso/COUNTER_TESTS' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'COUNTER_TESTS'.
+\w *WARNING* The directory: '/home/saul/projects/TEST_AMS45_V4/TEST_PDK' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'TEST_PDK'.
+\w *WARNING* The directory: '/opt/pdk/ams/examples/EXAMPLES_PowerSupplyC35B3_IC6/EXAMPLES_IO_C35B3_IC6' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'EXAMPLES_IO_C35B3_IC6'.
+\o Loading simulator default settings.
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\w *WARNING* _perfPstackCheck: Cannot find pstack/gstack. Please setup PATH environment variable to pstack/gstack executable.
+\o Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 522710' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\# Available memory:      2,832,336 MB at UTC 2026.03.10 21:22:57.492
+\# Memory report: Maximum memory size now 2,832,605 MB at UTC 2026.03.10 21:22:57.492
+\# Thread usage report: 54 active threads, active load 1.40 at UTC 2026.03.10 21:22:57.492
+\i ddsServOpen("BIAS" "ibias_cascode" "schematic" "edit" nil)
+\# [21:23:00.259681] Periodic Lic check successful
+\# [21:23:00.259978] Feature usage summary:
+\# [21:23:00.259979] 111
+\# Displaying modal dbox "_icLicLicenseQuestionDBox", title "Next License"
+\p  
+\a hiDBoxUser(_icLicLicenseQuestionDBox nil 1)
+\r t
+\# Current Window: window(3)
+\w *WARNING* LIB MINIMAL_CORE from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 64 redefines
+\w LIB MINIMAL_CORE from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_IO from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 65 redefines
+\w LIB MINIMAL_IO from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_TOP from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 66 redefines
+\w LIB MINIMAL_TOP from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/saul/projects/AMS35_DIG/test_mix/virtuoso/COUNTER_TESTS' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'COUNTER_TESTS'.
+\w *WARNING* The directory: '/home/saul/projects/TEST_AMS45_V4/TEST_PDK' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'TEST_PDK'.
+\w *WARNING* The directory: '/opt/pdk/ams/examples/EXAMPLES_PowerSupplyC35B3_IC6/EXAMPLES_IO_C35B3_IC6' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'EXAMPLES_IO_C35B3_IC6'.
+\o Loading schematic.cxt 
+\o Loading vb.cxt 
+\o Loading nt.cxt 
+\o Loading oi.cxt 
+\o Loading see.cxt 
+\o Loading treeAssistant.cxt 
+\o Loading asst.cxt 
+\o Loading hsm.cxt 
+\o Loading oasis.cxt 
+\o Loading simui.cxt 
+\a when(dwindow('oiAssistant1) hiMapWindow(dwindow('oiAssistant1)))
+\r t
+\a when(dwindow('treeAssistant1) hiMapWindow(dwindow('treeAssistant1)))
+\r t
+\a hiResizeWindow(swindow(1) list(-5:-5 1531:833))
+\r t
+\a hiZoomInAtMouse()
+\i 1.1875:-0.5
+\r t
+\a hiZoomInAtMouse()
+\i 1.1875:-0.4375
+\r t
+\a schSingleSelectPt()
+\i 0.8125:-0.375
+\r t
+\a schHiDelete()
+\p  
+\a mouseAddPt(t)
+\i 0.8375:-0.36875
+\r t
+\a mouseAddPt(t)
+\i 1.55:-0.3875
+\r t
+\a mouseAddPt(t)
+\i 1.55:-0.3875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateInst()
+\p  
+\a hiiSetCurrentForm('schCreateInstForm)
+\r t
+\a schCreateInstForm->libraryName->value="analogLib"
+\r "analogLib"
+\a schCreateInstForm->cellName->value="iprobe"
+\o Loading cdf.cxt 
+\o Loading le.cxt 
+\w *WARNING* could not load font "-*-helvetica-medium-r-*-*-12-*", using font "fixed"
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\r "iprobe"
+\a mouseAddPt(t)
+\i 0.68125:-0.68125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 0.75:-0.75
+\r t
+\a schHiCopy()
+\p  
+\a mouseAddPt(t)
+\i 0.7375:-0.7625
+\r t
+\a mouseAddPt(t)
+\i 1.525:-0.73125
+\r t
+\r t
+\a _schHiToolbarRotate('right)
+\p  
+\a mouseAddPt(t)
+\i 0.70625:-0.76875
+\r t
+\r t
+\a schSingleSelectPt()
+\i 1.0625:-0.875
+\r nil
+\a _schHiToolbarRotate('previous)
+\p  
+\a _schHiToolbarRotate('right)
+\p  
+\a mouseAddPt(t)
+\i 0.54375:-0.75
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a cancelEnterFun()
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 0.75:-0.75
+\r nil
+\a schDirectEdit(1)
+\i 0.5:-0.8125
+\# Direct Edit instance. schHiStretch action.
+\i 0.5:-0.8125
+\p  
+\a addPoint(hiGetCommandPoint())
+\i 1:-0.5
+\r t
+\r nil
+\a schHiCreateWire(0.0)
+\o Loading layers.cxt 
+\p  
+\a mouseAddPt(t)
+\i 0.80625:-0.375
+\r t
+\a mouseAddPt(t)
+\i 0.81875:-0.4875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schDirectEdit(1)
+\i 0.625:-1.4375
+\# Direct Edit instance. schHiStretch action.
+\i 0.625:-1.4375
+\p  
+\a addPoint(hiGetCommandPoint())
+\i 1.6875:-0.5
+\r t
+\r nil
+\a schHiCreateWire(0.0)
+\p  
+\a mouseAddPt(t)
+\i 1.5:-0.49375
+\r t
+\a mouseAddPt(t)
+\i 1.5:-0.38125
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateInst()
+\p  
+\a schCreateInstForm->cellName->value="gnd"
+\r "gnd"
+\a hiiToggleEnterForm(schCreateInstForm)
+\r t
+\a mouseAddPt(t)
+\i 0.7875:-0.89375
+\r t
+\a mouseAddPt(t)
+\i 1.48125:-0.8875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCreateWire(0.0)
+\p  
+\a mouseAddPt(t)
+\i 0.80625:-0.875
+\r t
+\a mouseAddPt(t)
+\i 0.80625:-0.625
+\r t
+\a mouseAddPt(t)
+\i 1.5:-0.61875
+\r t
+\a mouseAddPt(t)
+\i 1.50625:-0.86875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schSingleSelectPt()
+\i 0.5:-0.625
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: Schematics
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a _deUpdateMenu('schematicTools 3)
+\r t
+\a deInstallApp(getCurrentWindow() "analogArtist-Schematic")
+\o Loading vdsil.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading asimenv.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o Loading lx.cxt 
+\o Loading lce.cxt 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\o Loading drdEdit.cxt 
+\o Loading rte.cxt 
+\o Loading te.cxt 
+\o Loading schHDL.cxt 
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\# Current Window: window(4)
+\# Memory report: using         375 MB, process size 2,166 MB at UTC 2026.03.10 21:24:26.153
+\# Displaying modal dbox "_icLicLicenseQuestionDBox", title "Next License"
+\p  
+\a hiDBoxUser(_icLicLicenseQuestionDBox nil 1)
+\r t
+\# Displaying modal dbox "_icLicLicenseQuestionDBox", title "Next License"
+\p  
+\a hiDBoxUser(_icLicLicenseQuestionDBox nil 1)
+\r t
+\# Displaying modal dbox "_icLicLicenseQuestionDBox", title "Next License"
+\p  
+\a hiDBoxUser(_icLicLicenseQuestionDBox nil 1)
+\r t
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\r t
+\a sevLoadState('sevSession1)
+\p  
+\a hiiSetCurrentForm('sevLoadForm1)
+\r t
+\a sevLoadForm1->optionCellView->value="Cellview"
+\r "Cellview"
+\a hiFormDone(sevLoadForm1)
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\r t
+\r t
+\# Memory report: using         476 MB, process size 2,319 MB at UTC 2026.03.10 21:24:44.527
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 21:24:44 2026
+\o WARNING (OSSHNL-160): The primitive, 'analogLib/iprobe/spectre', was not used in the last netlisting session in this
+\o current run directory. Therefore, re-netlisting all cell views where this
+\o primitive is instantiated.
+\o 
+\o Loading json.cxt 
+\o End netlisting Mar 10 21:24:44 2026
+\o Loading monte.cxt 
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o Loading paraplot.cxt 
+\r t
+\# Current Window: window(5)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiCloseWindow(window(5))
+\# Current Window: window(4)
+\r t
+\a _hiSetCurrentWinNum(4)
+\r t
+\a sevAnnotateResults('sevSession1 'dcOpPoints)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiZoomOutAtMouse()
+\i 0.8125:-0.1875
+\r t
+\a hiDynamicPanGrabbing()
+\i 1.03125:0.0375
+\p  
+\a addPoint(hiGetCommandPoint())
+\i 1.03125:0.03125
+\a hiZoomIn(window(3) list(-1.13125:-2.05 5.41875:1.2125))
+\r t
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i 1.0625:0.25
+\r t
+\a hiDynamicPanGrabbing()
+\i 1.0375:0.29375
+\p  
+\a addPoint(hiGetCommandPoint())
+\i 1.0375:0.2875
+\a hiZoomIn(window(3) list(-0.0375:-0.74375 3.24375:0.8875))
+\r t
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i 0.6875:0.625
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.73125:0.55625
+\p  
+\a addPoint(hiGetCommandPoint())
+\i 0.7375:0.55625
+\a hiZoomIn(window(3) list(-0.93125:-1.70625 5.63125:1.56875))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.5125:1.06875
+\p  
+\a addPoint(hiGetCommandPoint())
+\i 0.5125:1.06875
+\a hiZoomIn(window(3) list(-1.3125:-1.5375 5.25:1.7375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.44375:0.81875
+\p  
+\a addPoint(hiGetCommandPoint())
+\i 0.44375:0.81875
+\a hiZoomIn(window(3) list(-2.6625:-2.1375 3.9:1.1375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.55:-0.46875
+\p  
+\a addPoint(hiGetCommandPoint())
+\i 0.55:-0.46875
+\a hiZoomIn(window(3) list(-3.06875:-2.2625 3.49375:1.0125))
+\r t
+\r t
+\r t
+\a _deUpdateMenu('schematicTools 3)
+\r t
+\a _axlInstallMainAndSubApps()
+\p  
+\a hiiSetCurrentForm('axlIntroForm)
+\r t
+\a axlIntroForm->radioField->value="Create New View"
+\r "Create New View"
+\a hiFormDone(axlIntroForm)
+\r t
+\w *WARNING* LIB MINIMAL_CORE from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 64 redefines
+\w LIB MINIMAL_CORE from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_IO from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 65 redefines
+\w LIB MINIMAL_IO from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_TOP from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 66 redefines
+\w LIB MINIMAL_TOP from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/saul/projects/AMS35_DIG/test_mix/virtuoso/COUNTER_TESTS' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'COUNTER_TESTS'.
+\w *WARNING* The directory: '/home/saul/projects/TEST_AMS45_V4/TEST_PDK' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'TEST_PDK'.
+\w *WARNING* The directory: '/opt/pdk/ams/examples/EXAMPLES_PowerSupplyC35B3_IC6/EXAMPLES_IO_C35B3_IC6' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'EXAMPLES_IO_C35B3_IC6'.
+\p  
+\a hiiSetCurrentForm('deNewForm)
+\r t
+\a hiFormDone(deNewForm)
+\o Loading elec.cxt 
+\o Loading vqp.cxt 
+\# ADE XL session 'session0' started on Tue Mar 10 21:29:47 2026 
+\# Current Window: window(6)
+\r t
+\w Qt Warning: setNativeLocks failed: "Resource temporarily unavailable"
+\o Loading cfde.cxt 
+\r t
+\a hiRaiseWindow(6 t)
+\r t
+\a _axlDataViewSetDataInt(axlDataViewForm0->axlDataViewWidget0 "'(0 )" 0 2 10)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 )" 0)
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\# Current Window: window(7)
+\w *WARNING* LIB MINIMAL_CORE from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 64 redefines
+\w LIB MINIMAL_CORE from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_IO from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 65 redefines
+\w LIB MINIMAL_IO from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_TOP from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 66 redefines
+\w LIB MINIMAL_TOP from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/saul/projects/AMS35_DIG/test_mix/virtuoso/COUNTER_TESTS' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'COUNTER_TESTS'.
+\w *WARNING* The directory: '/home/saul/projects/TEST_AMS45_V4/TEST_PDK' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'TEST_PDK'.
+\a _axlWaveSpecGlobalSetReferenceLib(axlWaveGlobalSetupForm0->axlWaveGlobalSetupWidget0 "")
+\w *WARNING* The directory: '/opt/pdk/ams/examples/EXAMPLES_PowerSupplyC35B3_IC6/EXAMPLES_IO_C35B3_IC6' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'EXAMPLES_IO_C35B3_IC6'.
+\r t
+\p  
+\a hiiSetCurrentForm('sevDesignForm2)
+\r t
+\a hiFormDone(sevDesignForm2)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 0 )" 1)
+\r t
+\a sevEditSelectedAnas('sevSession3)
+\p  
+\# Thread usage report: 55 active threads, active load 1.40 at UTC 2026.03.10 21:29:57.491
+\a _asii_spectre2_analysis_form->tran_stop->value="10m"
+\r "10m"
+\a hiFormDone(_asii_spectre2_analysis_form)
+\r t
+\r t
+\a sevClickTableHeader(sevOutForm2->outListBox 3)
+\r t
+\a (_sevOutSortCallback 'sevSession3)
+\r t
+\a sevChangeOutsOnSchematic('sevSession3 'plot)
+\a _ciAssistantReplay_newAssistantByName(dwindow('ciProspector1) "Rapid Analog Prototype")
+\r t
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: adexl-schematic
+\r t
+\a hiZoomInAtMouse()
+\i 0.875:-0.5625
+\r t
+\a hiZoomInAtMouse()
+\i 0.875:-0.5625
+\r t
+\a schSingleSelectPt()
+\i 0.8125:-0.5
+\i 0.8125:-0.5
+\r t
+\a schSingleSelectPt()
+\i 1.5:-0.5
+\i 1.5:-0.5
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 1 0)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 1 1)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 1 2)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 1 3)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 1 4)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 1 5)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 1 6)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 1 7)
+\r t
+\a _axlOutputSetupCurrentChanged(axlOutputsForm0->axlOutputsWidget0 1 0)
+\r t
+\a hiRaiseWindow(6 t)
+\# Current Window: window(6)
+\r t
+\a hiCloseWindow(swindow(3))
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 1 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 1 )" 0)
+\r t
+\# Current Window: window(8)
+\w *WARNING* LIB MINIMAL_CORE from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 64 redefines
+\w LIB MINIMAL_CORE from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_IO from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 65 redefines
+\w LIB MINIMAL_IO from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_TOP from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 66 redefines
+\w LIB MINIMAL_TOP from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/saul/projects/AMS35_DIG/test_mix/virtuoso/COUNTER_TESTS' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'COUNTER_TESTS'.
+\w *WARNING* The directory: '/home/saul/projects/TEST_AMS45_V4/TEST_PDK' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'TEST_PDK'.
+\w *WARNING* The directory: '/opt/pdk/ams/examples/EXAMPLES_PowerSupplyC35B3_IC6/EXAMPLES_IO_C35B3_IC6' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'EXAMPLES_IO_C35B3_IC6'.
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf modify_plot
+\a hiiSetCurrentForm('sevDesignForm4)
+\r t
+\a hiFormDone(sevDesignForm4)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 2 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 2 )" 1)
+\r t
+\a _axlDefSimUpdate(axlRunSummaryForm0->axlRunSummaryWidget0 2)
+\r t
+\a _axlDefSimUpdate(axlRunSummaryForm0->axlRunSummaryWidget0 2)
+\r t
+\a sevEditSelectedAnas('sevSession5)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a _asii_spectre4_analysis_form->asiiAnalysisRadioField->value="dc"
+\r "dc"
+\a _asii_spectre4_analysis_form->dc_saveOppoint->value= t
+\r t
+\a _asii_spectre4_analysis_form->dc_sweep->Design\ Variable->value =  t
+\r t
+\a spectreiDesignVarSelectPSS( 'dc 'designVar nil ) asiiAnalysisFieldCB( asiGetSession( 'spectre4 ) )
+\# Displaying non-modal dbox "asiDesignVarSelecDB", title "Select Design Variable"
+\r t
+\a hiDBoxOK(asiDesignVarSelecDB)
+\r t
+\a _asii_spectre4_analysis_form->dc_sweep->Component\ Parameter->value =  t
+\r t
+\a asiSelectAnalysisCompParam('dc 'dev 'deviceParam) asiiAnalysisFieldCB( asiGetSession( 'spectre4 ) )
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: adexl-schematic
+\r t
+\a hiZoomOutAtMouse()
+\i -0.4375:-0.5
+\r t
+\a hiZoomOutAtMouse()
+\i -0.4375:-0.5
+\r t
+\a hiDynamicPanGrabbing()
+\i -1.68125:-0.1125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf Select component...
+\a addPoint(hiGetCommandPoint())
+\i -1.68125:-0.11875
+\a hiZoomIn(window(3) list(-4.425:-3.66875 6.775:1.98125))
+\r t
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i -2.1875:0.375
+\r t
+\a schSingleSelectPt()
+\i -2.375:0.5625
+\i -2.375:0.5625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf Select component...
+\a listBox->value = '( "dc          vdc        \"DC voltage\"")
+\r ("dc          vdc        \"DC voltage\"")
+\a hiListBoxDone(listBox)
+\r t
+\r t
+\a _asii_spectre4_analysis_form->dc_start->value="0"
+\r "0"
+\a _asii_spectre4_analysis_form->dc_stop->value="3.3"
+\r "3.3"
+\a hiFormDone(_asii_spectre4_analysis_form)
+\r t
+\r t
+\a hiRaiseWindow(6 t)
+\# Current Window: window(6)
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm0->axlDataViewWidget0 "'(0 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 1 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 1 )" 0)
+\r t
+\a _axlDataViewItemDoubleClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 1 )" 0)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 1 )" 0)
+\r t
+\a hiSetCurrentWindow(window(8))
+\# Current Window: window(8)
+\r t
+\a sevChangeOutsOnSchematic('sevSession5 'plot)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: adexl-schematic
+\r t
+\a schSingleSelectPt()
+\i 0.8125:-0.5
+\i 0.8125:-0.5
+\r t
+\a schSingleSelectPt()
+\i 1.5:-0.5
+\i 1.5:-0.5
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 3 0)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 3 1)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 3 2)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 3 3)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 3 4)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 3 5)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 3 6)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm0->axlOutputsWidget0 0 "add" 3 7)
+\r t
+\a _axlOutputSetupCurrentChanged(axlOutputsForm0->axlOutputsWidget0 3 0)
+\r t
+\a hiCloseWindow(swindow(4))
+\r t
+\a hiCloseWindow(swindow(2))
+\r t
+\a hiRaiseWindow(6 t)
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 1 )" 1)
+\r t
+\# Current Window: window(6)
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm0->axlDataViewWidget0 "'(0 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 1 )" 1)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 1 )" 0)
+\r t
+\a (axlRunSimulation)
+\o Loading adpServer.cxt 
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 1 )" 1)
+\r t
+\a _axlSelectResultsTab(axlOutputsForm0->axlOutputsWidget0 0)
+\r t
+\r 0
+\a _axlDefSimUpdate(axlRunSummaryForm0->axlRunSummaryWidget0 2)
+\r t
+\o Loading hdlPkg.cxt 
+\a _axlPlot(axlOutputsForm0->axlOutputsWidget0)
+\r t
+\# Current Window: window(9)
+\a rdbLoadResults("session0" "./Sim/BIAS/ibias_cascode/adexl/results/data/Interactive.0/psf/BIAS:ibias_cascode:1/psf")
+\r t
+\a rdbLoadResults("session0" "./Sim/BIAS/ibias_cascode/adexl/results/data/Interactive.0/psf/BIAS:ibias_cascode:2/psf")
+\r t
+\# Current Window: window(10)
+\o Loading stats.cxt 
+\# Current Window: window(11)
+\# Memory report: using         988 MB, process size 6,162 MB at UTC 2026.03.10 21:38:56.332
+\# Thread usage report: 56 active threads, active load 1.40 at UTC 2026.03.10 21:38:57.492
+\a hiSetCurrentWindow(window(9))
+\# Current Window: window(9)
+\r t
+\a _vvSetCurrentWindow("session0" "win12" )
+\r t
+\a hiCloseWindow(swindow(5))
+\# Current Window: window(6)
+\r t
+\a _hiSetCurrentWinNum(6)
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSetDataString(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0 "BIAS:ibias_cascode:1" 2)
+\r t
+\a _axlSetCurrentTest(axlDataViewForm0->axlDataViewWidget0 "BIAS:ibias_cascode:1")
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 1)
+\r t
+\a _axlDataViewSetDataString(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 1 "BIAS:ibias_cascode:1" 2)
+\r t
+\a _axlSetCurrentTest(axlDataViewForm0->axlDataViewWidget0 "BIAS:ibias_cascode:1")
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemDoubleClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\# Current Window: window(12)
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a sevTableSelectRows(sevAnaForm3->anaListBox 0)
+\r t
+\a (sevEditSelectedAnas 'sevSession3)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a _asii_spectre2_analysis_form->tran_stop->value="1m"
+\r "1m"
+\a hiFormDone(_asii_spectre2_analysis_form)
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 0 )" 1)
+\r t
+\r t
+\r t
+\a hiCloseWindow(swindow(6))
+\# Current Window: window(11)
+\r t
+\a _hiSetCurrentWinNum(11)
+\r t
+\a hiSetCurrentWindow(window(6))
+\# Current Window: window(6)
+\r t
+\a (axlRunSimulation)
+\a _axlSelectResultsTab(axlOutputsForm0->axlOutputsWidget0 1)
+\r t
+\r 1
+\a _axlDefSimUpdate(axlRunSummaryForm0->axlRunSummaryWidget0 2)
+\r t
+\a _axlPlot(axlOutputsForm0->axlOutputsWidget0)
+\r t
+\# Current Window: window(13)
+\a rdbLoadResults("session0" "./Sim/BIAS/ibias_cascode/adexl/results/data/Interactive.1/psf/BIAS:ibias_cascode:1/psf")
+\r t
+\a rdbLoadResults("session0" "./Sim/BIAS/ibias_cascode/adexl/results/data/Interactive.1/psf/BIAS:ibias_cascode:2/psf")
+\r t
+\# Current Window: window(14)
+\# Current Window: window(15)
+\a hiSetCurrentWindow(window(13))
+\# Current Window: window(13)
+\r t
+\a _vvSetCurrentWindow("session0" "win25" )
+\r t
+\a hiCloseWindow(swindow(7))
+\# Current Window: window(11)
+\r t
+\a _hiSetCurrentWinNum(11)
+\r t
+\a hiSetCurrentWindow(window(6))
+\# Current Window: window(6)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(0 0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSetDataString(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0 "BIAS:ibias_cascode:1" 2)
+\r t
+\a _axlSetCurrentTest(axlDataViewForm0->axlDataViewWidget0 "BIAS:ibias_cascode:1")
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 1)
+\r t
+\a _axlDataViewSetDataString(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 1 "BIAS:ibias_cascode:1" 2)
+\r t
+\a _axlSetCurrentTest(axlDataViewForm0->axlDataViewWidget0 "BIAS:ibias_cascode:1")
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSetDataString(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0 "BIAS:ibias_cascode:1" 2)
+\r t
+\a _axlSetCurrentTest(axlDataViewForm0->axlDataViewWidget0 "BIAS:ibias_cascode:1")
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemDoubleClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\# Current Window: window(16)
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(0 0 )" 0)
+\r t
+\a sevTableSelectRows(sevAnaForm3->anaListBox 0)
+\r t
+\a (sevEditSelectedAnas 'sevSession3)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiFormDone(_asii_spectre2_analysis_form)
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "remove" "'(0 0 )" 1)
+\r t
+\r t
+\r t
+\a hiCloseWindow(swindow(8))
+\# Current Window: window(15)
+\r t
+\a _hiSetCurrentWinNum(15)
+\r t
+\a hiSetCurrentWindow(window(6))
+\# Current Window: window(6)
+\r t
+\a hiRaiseWindow(3 t)
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: adexl-schematic
+\r t
+\a hiZoomInAtMouse()
+\i 0.5625:0.125
+\r t
+\a hiZoomOutAtMouse()
+\i 0.5625:0.125
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.53125:0.4375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.53125:0.43125
+\a hiZoomIn(window(3) list(-2.7625:-0.9375 2.8625:1.9))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.25625:-0.53125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.25625:-0.525
+\a hiZoomIn(window(3) list(-3.05:-2.04375 2.575:0.79375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.675:-1.4375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.675:-1.4375
+\a hiZoomIn(window(3) list(-3.21875:-2.84375 2.40625:-0.00625))
+\r t
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i 0.25:-1.25
+\r t
+\a hiZoomOutAtMouse()
+\i 0.1875:-1.3125
+\r t
+\a hiZoomOutAtMouse()
+\i 0.125:-1.25
+\r t
+\a hiZoomOutAtMouse()
+\i 0.1875:-1.25
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.43125:0.5375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.4375:0.5375
+\a hiZoomIn(window(3) list(-12.625:-5.23125 9.975:6.16875))
+\r t
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i 0.25:0.125
+\r t
+\a hiZoomInAtMouse()
+\i 0.0625:-0.5
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.35625:0.28125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.35:0.275
+\a hiZoomIn(window(3) list(-2.95:-0.95625 2.7125:1.9))
+\r t
+\r t
+\r t
+\a hiRaiseWindow(6 t)
+\# Current Window: window(6)
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm0->axlDataViewWidget0 "'(3 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(3 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm0->axlDataViewWidget0 1 "add" "'(3 1 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(3 1 )" 0)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm0->axlDataViewWidget0 "'(3 0 )" 0)
+\r t
+\a hiiSetCurrentForm('axlCornersForm0)
+\r t
+\w Qt Warning: edit: index was invalid
+\w Qt Warning: edit: editing failed
+\a _axlAddNewCorner(axlCornersForm0->axlCornersWidget0)
+\r t
+\a _axlSetOffsetDataOnCornerTable(axlCornersForm0->axlCornersWidget0 2 3 "27" 2 "'()")
+\r t
+\a _axlSetOffsetDataOnCornerTable(axlCornersForm0->axlCornersWidget0 6 0 "All" 2 "'()")
+\r t
+\a _axlSetOffsetDataOnCornerTable(axlCornersForm0->axlCornersWidget0 4 0 "All" 2 "'()")
+\r t
+\a hiFormCancel(axlCornersForm0) 
+\r t
+\a _axlSelectResultItem(axlOutputsForm0->axlOutputsWidget0 "'( (1 5))")
+\r t
+\a _axlSelectResultItem(axlOutputsForm0->axlOutputsWidget0 "'( (1 5))")
+\r t
+\a _axlSelectResultItem(axlOutputsForm0->axlOutputsWidget0 "'( (3 5))")
+\r t
+\a _axlSelectResultItem(axlOutputsForm0->axlOutputsWidget0 "'( (3 5))")
+\r t
+\a hiCloseWindow(window(2))
+\r t
+\a _axlSelectResultItem(axlOutputsForm0->axlOutputsWidget0 "'( (3 5))")
+\r t
+\a _axlSelectResultItem(axlOutputsForm0->axlOutputsWidget0 "'( (3 5))")
+\r t
+\a hiCloseWindow(window(6))
+\# Displaying modal dbox "sevblockingDialogBox", title "ADE (G)XL Save Setup"
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiDBoxOK(sevblockingDialogBox)
+\r t
+\# ADE XL session 'session0' closed on Tue Mar 10 21:50:58 2026 
+\w Qt Warning: setNativeLocks failed: "Resource temporarily unavailable"
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: Schematics
+\r t
+\a _hiSetCurrentWinNum(3)
+\r t
+\# Thread usage report: 55 active threads, active load 1.40 at UTC 2026.03.10 21:51:07.491
+\a hiZoomInAtMouse()
+\i -0.125:0.625
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.1375:0.83125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.14375:0.825
+\a hiZoomIn(window(3) list(-2.2625:-0.9125 2.90625:1.78125))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.79375:0.6875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.79375:0.6875
+\a hiZoomIn(window(3) list(-2.44375:-0.8875 2.725:1.80625))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5:1.0625
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "8u M")
+\r t
+\a schSingleSelectPt()
+\i -1.5625:0.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "8u M")
+\r t
+\a schSingleSelectPt()
+\i -0.3125:0.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "8u M")
+\r t
+\a schSingleSelectPt()
+\i -0.3125:1.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "8u M")
+\r t
+\a schSingleSelectPt()
+\i 0.75:1.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "8u M")
+\r t
+\a schSingleSelectPt()
+\i 0.6875:0.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "8u M")
+\r t
+\a schSingleSelectPt()
+\i 1.4375:1.0625
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "8u M")
+\r t
+\a schSingleSelectPt()
+\i 1.4375:0.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "8u M")
+\r t
+\a schSingleSelectPt()
+\i -1.125:0.4375
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: Schematics
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a _deUpdateMenu('schematicTools 3)
+\r t
+\a deInstallApp(getCurrentWindow() "analogArtist-Schematic")
+\# Current Window: window(17)
+\r t
+\a sevLoadState('sevSession10)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiiSetCurrentForm('sevLoadForm10)
+\r t
+\a sevLoadForm10->optionCellView->value="Cellview"
+\r "Cellview"
+\a hiFormCancel(sevLoadForm10) 
+\r t
+\r nil
+\a hiCloseWindow(swindow(9))
+\w Qt Warning: setNativeLocks failed: "Resource temporarily unavailable"
+\# Current Window: window(15)
+\r t
+\a _hiSetCurrentWinNum(15)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: Schematics
+\r t
+\a schSingleSelectPt()
+\i -0.5625:1.1875
+\r nil
+\a schSingleSelectPt()
+\i -2.4375:0.5625
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "vdd")
+\r t
+\a schSingleSelectPt()
+\i -3.875:-0.0625
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: Schematics
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a _deUpdateMenu('schematicTools 3)
+\r t
+\a deInstallApp(getCurrentWindow() "analogArtist-Schematic")
+\# Current Window: window(18)
+\r t
+\a sevCopyCellViewVariables('sevSession11 ?copyCV t)
+\r t
+\a sevTableSelectRows(sevWindowForm11->varListBox 0)
+\r t
+\a sevSetTableItem(sevWindowForm11->varListBox 0 1 "3.3")
+\r t
+\a sevEditSelectedAnas('sevSession11)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a _asii_spectre10_analysis_form->tran_stop->value="1m"
+\r "1m"
+\a hiFormDone(_asii_spectre10_analysis_form)
+\r t
+\r t
+\a sevEditSelectedAnas('sevSession11)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a _asii_spectre10_analysis_form->asiiAnalysisRadioField->value="dc"
+\r "dc"
+\a _asii_spectre10_analysis_form->dc_saveOppoint->value= t
+\r t
+\a _asii_spectre10_analysis_form->dc_sweep->Design\ Variable->value =  t
+\r t
+\a spectreiDesignVarSelectPSS( 'dc 'designVar nil ) asiiAnalysisFieldCB( asiGetSession( 'spectre10 ) )
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a listBox->value = '( "vdd")
+\r ("vdd")
+\a hiListBoxDone(listBox)
+\r t
+\r t
+\a _asii_spectre10_analysis_form->dc_start->value="0"
+\r "0"
+\a _asii_spectre10_analysis_form->dc_stop->value="3.3"
+\r "3.3"
+\a hiFormDone(_asii_spectre10_analysis_form)
+\r t
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.975:0.75
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.975:0.75
+\r t
+\r t
+\a hiZoomIn(window(3) list(-2.3:-1.0625 2.86875:1.51875))
+\r t
+\a hiSetCurrentWindow(window(18))
+\# Current Window: window(18)
+\r t
+\a sevChangeOutsOnSchematic('sevSession11 'plot)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i 0.8125:-0.5
+\i 0.8125:-0.5
+\r t
+\a schSingleSelectPt()
+\i 1.5:-0.5
+\i 1.5:-0.5
+\r t
+\a hiSetCurrentWindow(window(18))
+\# Current Window: window(18)
+\r t
+\a sevNetlistAndRun('sevSession11)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 21:57:03 2026
+\o WARNING (OSSHNL-226): There are more design variables used in the current netlisting session as
+\o compared to the last session in the current run directory. The netlist(s)
+\o generated in the last netlisting session cannot be reused for incremental
+\o netlisting. Therefore re-netlisting the design.
+\o 
+\o End netlisting Mar 10 21:57:03 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(19)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(20)
+\a rdbLoadResults("sevSession11" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(21)
+\a hiCloseWindow(swindow(11))
+\# Current Window: window(19)
+\r t
+\a _hiSetCurrentWinNum(19)
+\r t
+\a _hiSetCurrentWinNum(19)
+\r t
+\a hiCloseWindow(window(19))
+\# [21:58:05.240354] Periodic Lic check successful
+\# [21:58:05.240425] Feature usage summary:
+\# [21:58:05.240426] 111
+\# [21:58:05.240427] Virtuoso_ADE_Explorer
+\# [21:58:05.240432] Virtuoso_Schematic_Editor_XL
+\# Current Window: window(18)
+\r t
+\a _hiSetCurrentWinNum(18)
+\r t
+\a hiCloseWindow(swindow(10))
+\# Displaying modal dbox "sevblockingDialogBox", title "Save State Query"
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf modify_plot
+\a hiDBoxOK(sevblockingDialogBox)
+\r t
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf modify_plot
+\a hiiSetCurrentForm('sevSaveForm11)
+\r t
+\a sevSaveForm11->optionCellView->value="Cellview"
+\r "Cellview"
+\a hiFormDone(sevSaveForm11)
+\# Displaying modal dbox "sevblockingDialogBox", title "Warning"
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf modify_plot
+\a hiDBoxOK(sevblockingDialogBox)
+\r t
+\w *WARNING* LIB MINIMAL_CORE from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 64 redefines
+\w LIB MINIMAL_CORE from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_IO from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 65 redefines
+\w LIB MINIMAL_IO from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_TOP from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 66 redefines
+\w LIB MINIMAL_TOP from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/saul/projects/AMS35_DIG/test_mix/virtuoso/COUNTER_TESTS' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'COUNTER_TESTS'.
+\w *WARNING* The directory: '/home/saul/projects/TEST_AMS45_V4/TEST_PDK' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'TEST_PDK'.
+\w *WARNING* The directory: '/opt/pdk/ams/examples/EXAMPLES_PowerSupplyC35B3_IC6/EXAMPLES_IO_C35B3_IC6' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'EXAMPLES_IO_C35B3_IC6'.
+\r t
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\w Qt Warning: setNativeLocks failed: "Resource temporarily unavailable"
+\# Current Window: window(15)
+\r t
+\a _hiSetCurrentWinNum(15)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: Schematics
+\r t
+\a hiDynamicPanGrabbing()
+\i -1.5:0.70625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -1.49375:0.70625
+\a hiZoomIn(window(3) list(-2.825:-0.6 2.34375:2.09375))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5:1.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i -1.5625:0.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i -0.3125:0.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i -0.25:1.0625
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i 0.6875:0.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i 0.75:1.0625
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i 1.375:0.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i 1.4375:1.0625
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i -2.0625:0.125
+\r nil
+\a hiDynamicPanGrabbing()
+\i -0.99375:-0.15
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.99375:-0.15
+\a hiZoomIn(window(3) list(-2.86875:-1.66875 2.3:1.025))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -1.025:-0.825
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -1.03125:-0.81875
+\a hiZoomIn(window(3) list(-2.9:-2.0125 2.26875:0.68125))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.125
+\r t
+\a schSingleSelectPt()
+\i -1.5625:-1.3125
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.3:-1.24375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.3:-1.25
+\a hiZoomIn(window(3) list(-2.85625:-2.69375 2.3125:0))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -0.1875:-2.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "60k Ohms")
+\r t
+\a schSingleSelectPt()
+\i -2.25:-1.4375
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: Schematics
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a _deUpdateMenu('schematicTools 3)
+\r t
+\a deInstallApp(getCurrentWindow() "analogArtist-Schematic")
+\# Current Window: window(22)
+\r t
+\a sevLoadState('sevSession12)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiiSetCurrentForm('sevLoadForm12)
+\r t
+\a sevLoadForm12->optionCellView->value="Cellview"
+\r "Cellview"
+\a hiFormDone(sevLoadForm12)
+\r t
+\r t
+\a sevNetlistAndRun('sevSession12)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:00:31 2026
+\o End netlisting Mar 10 22:00:31 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(23)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(24)
+\a rdbLoadResults("sevSession12" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(25)
+\a hiCloseWindow(swindow(13))
+\# Current Window: window(23)
+\r t
+\a _hiSetCurrentWinNum(23)
+\r t
+\a _hiSetCurrentWinNum(23)
+\r t
+\a hiCloseWindow(window(23))
+\# Current Window: window(22)
+\r t
+\a _hiSetCurrentWinNum(22)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.01875:-0.40625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.00625:-0.41875
+\a hiZoomIn(window(3) list(-2.24375:-1.90625 2.925:0.675))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.36875:0.35625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.36875:0.35625
+\a hiZoomIn(window(3) list(-1.56875:-1.45 3.6:1.13125))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i 0.75:0.3125
+\r t
+\a schSingleSelectPt()
+\i -0.25:0.375
+\r t
+\a schSingleSelectPt()
+\i 1.4375:0.3125
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.40625:-0.34375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.40625:-0.34375
+\a hiZoomIn(window(3) list(-1.725:-2.15625 3.44375:0.425))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.41875:-1.09375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.41875:-1.09375
+\a hiZoomIn(window(3) list(-1.63125:-2.86875 3.5375:-0.2875))
+\r t
+\r t
+\r t
+\a hiCloseWindow(swindow(12))
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\w Qt Warning: setNativeLocks failed: "Resource temporarily unavailable"
+\r t
+\a _deUpdateMenu('schematicTools 3)
+\r t
+\a _axlInstallMainAndSubApps()
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiiSetCurrentForm('axlIntroForm)
+\r t
+\a axlIntroForm->radioField->value="Create New View"
+\r "Create New View"
+\a hiFormDone(axlIntroForm)
+\r t
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiiSetCurrentForm('deNewForm)
+\r t
+\a hiFormDone(deNewForm)
+\# Displaying modal dbox "deDBox", title "Already Exists"
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiDBoxOK(deDBox)
+\r t
+\# ADE XL session 'session1' started on Tue Mar 10 22:01:25 2026 
+\# Current Window: window(26)
+\r t
+\w Qt Warning: setNativeLocks failed: "Resource temporarily unavailable"
+\r t
+\a hiRaiseWindow(26 t)
+\r t
+\# Thread usage report: 56 active threads, active load 1.40 at UTC 2026.03.10 22:01:27.492
+\a _axlDataViewSetDataInt(axlDataViewForm1->axlDataViewWidget1 "'(0 )" 0 2 10)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 )" 0)
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm1->axlDataViewWidget1 "'(0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 )" 0)
+\r t
+\a _axlDataViewItemDoubleClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 )" 0)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 )" 0)
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(0 0 )" 1)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\# Current Window: window(27)
+\w *WARNING* LIB MINIMAL_CORE from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 64 redefines
+\w LIB MINIMAL_CORE from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_IO from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 65 redefines
+\w LIB MINIMAL_IO from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_TOP from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 66 redefines
+\w LIB MINIMAL_TOP from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/saul/projects/AMS35_DIG/test_mix/virtuoso/COUNTER_TESTS' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'COUNTER_TESTS'.
+\w *WARNING* The directory: '/home/saul/projects/TEST_AMS45_V4/TEST_PDK' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'TEST_PDK'.
+\a _axlWaveSpecGlobalSetReferenceLib(axlWaveGlobalSetupForm1->axlWaveGlobalSetupWidget1 "")
+\w *WARNING* The directory: '/opt/pdk/ams/examples/EXAMPLES_PowerSupplyC35B3_IC6/EXAMPLES_IO_C35B3_IC6' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'EXAMPLES_IO_C35B3_IC6'.
+\r t
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiiSetCurrentForm('sevDesignForm13)
+\r t
+\a hiFormDone(sevDesignForm13)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(0 0 )" 1)
+\r t
+\a hiSetCurrentWindow(window(26))
+\# Current Window: window(26)
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(0 0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemDoubleClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a hiSetCurrentWindow(window(27))
+\# Current Window: window(27)
+\r t
+\a sevCopyCellViewVariables('sevSession14 ?copyCV t)
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(0 0 )" 1)
+\r t
+\r t
+\a sevTableSelectRows(sevWindowForm13->varListBox 0)
+\r t
+\a sevSetTableItem(sevWindowForm13->varListBox 0 1 "3.3")
+\r t
+\a sevEditSelectedAnas('sevSession14)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a _asii_spectre13_analysis_form->asiiAnalysisRadioField->value="dc"
+\r "dc"
+\a _asii_spectre13_analysis_form->dc_saveOppoint->value= t
+\r t
+\a _asii_spectre13_analysis_form->dc_sweep->Design\ Variable->value =  t
+\r t
+\a spectreiDesignVarSelectPSS( 'dc 'designVar nil ) asiiAnalysisFieldCB( asiGetSession( 'spectre13 ) )
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a listBox->value = '( "vdd")
+\r ("vdd")
+\a hiListBoxDone(listBox)
+\r t
+\r t
+\a hiFormCancel(_asii_spectre13_analysis_form) 
+\r t
+\r nil
+\a hiCloseWindow(swindow(14))
+\# Current Window: window(26)
+\r t
+\a _hiSetCurrentWinNum(26)
+\r t
+\a hiRaiseWindow(3 t)
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: adexl-schematic
+\r t
+\a schSingleSelectPt()
+\i -2.4375:0.5625
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "VDDA V")
+\r t
+\a schSingleSelectPt()
+\i -4.0625:-1.625
+\r nil
+\a hiRaiseWindow(26 t)
+\# Current Window: window(26)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(0 0 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemDoubleClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\# Current Window: window(28)
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a sevTableSelectRows(sevWindowForm14->varListBox 0)
+\r t
+\a (sevDeleteSelectedVars 'sevSession14)
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(0 0 )" 1)
+\r t
+\r t
+\a sevCopyCellViewVariables('sevSession14 ?copyCV t)
+\r t
+\a sevTableSelectRows(sevWindowForm14->varListBox 0)
+\r t
+\a sevSetTableItem(sevWindowForm14->varListBox 0 1 "3.3")
+\r t
+\a sevEditSelectedAnas('sevSession14)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a _asii_spectre13_analysis_form->asiiAnalysisRadioField->value="dc"
+\r "dc"
+\a _asii_spectre13_analysis_form->dc_saveOppoint->value= t
+\r t
+\a _asii_spectre13_analysis_form->dc_sweep->Design\ Variable->value =  t
+\r t
+\a spectreiDesignVarSelectPSS( 'dc 'designVar nil ) asiiAnalysisFieldCB( asiGetSession( 'spectre13 ) )
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a listBox->value = '( "VDDA")
+\r ("VDDA")
+\a hiListBoxDone(listBox)
+\r t
+\r t
+\a _asii_spectre13_analysis_form->dc_start->value="0"
+\r "0"
+\a _asii_spectre13_analysis_form->dc_stop->value="3.3"
+\r "3.3"
+\a hiFormDone(_asii_spectre13_analysis_form)
+\r t
+\r t
+\a sevChangeOutsOnSchematic('sevSession14 'plot)
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: adexl-schematic
+\r t
+\a hiZoomInAtMouse()
+\i 0.8125:-0.5
+\r t
+\a schSingleSelectPt()
+\i 0.8125:-0.5
+\i 0.8125:-0.5
+\r t
+\a schSingleSelectPt()
+\i 1.5:-0.5
+\i 1.5:-0.5
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm1->axlOutputsWidget1 0 "add" 1 0)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm1->axlOutputsWidget1 0 "add" 1 1)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm1->axlOutputsWidget1 0 "add" 1 2)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm1->axlOutputsWidget1 0 "add" 1 3)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm1->axlOutputsWidget1 0 "add" 1 4)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm1->axlOutputsWidget1 0 "add" 1 5)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm1->axlOutputsWidget1 0 "add" 1 6)
+\r t
+\a _axlOutputSetupSelect(axlOutputsForm1->axlOutputsWidget1 0 "add" 1 7)
+\r t
+\a _axlOutputSetupCurrentChanged(axlOutputsForm1->axlOutputsWidget1 1 0)
+\r t
+\a hiCloseWindow(swindow(15))
+\r t
+\a hiRaiseWindow(26 t)
+\# Current Window: window(26)
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm1->axlDataViewWidget1 "'(3 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(3 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(3 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(3 )" 0)
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm1->axlDataViewWidget1 "'(3 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(3 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(3 1 )" 1)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(3 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(3 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(3 1 )" 0)
+\r t
+\a hiiSetCurrentForm('axlCornersForm1)
+\r t
+\a (hiGetAnyFile ?workingDir "." ?caption "Import Corners" ?filter "CSV Files (*.csv)" ?acceptMode 'open ?modal t)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf modify_plot
+\a (hiFileDialogSetSelection _hiiGetAnyFile nil 'cancel)
+\r t
+\a (hiFileDialogDone _hiiGetAnyFile nil)
+\r t
+\w Qt Warning: setNativeLocks failed: "Resource temporarily unavailable"
+\r false
+\a hiFormCancel(axlCornersForm1) 
+\r t
+\a _axlDataViewSetCurrent(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "add" "'(0 0 )" 1)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(3 1 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(3 1 )" 1)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSetDataString(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0 "BIAS:ibias_cascode:1" 2)
+\r t
+\a _axlSetCurrentTest(axlDataViewForm1->axlDataViewWidget1 "BIAS:ibias_cascode:1")
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a _axlDataViewSetDataString(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0 "BIAS:ibias_cascode:1" 2)
+\r t
+\a _axlSetCurrentTest(axlDataViewForm1->axlDataViewWidget1 "BIAS:ibias_cascode:1")
+\r t
+\a _axlDataViewItemClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\a _axlDataViewItemDoubleClicked(axlDataViewForm1->axlDataViewWidget1 "'(0 0 )" 0)
+\r t
+\# Current Window: window(29)
+\a sevNetlistAndRun('sevSession14)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf modify_plot
+\a hiiSetCurrentForm('testEditorRunMessage)
+\r t
+\a hiFormClose(testEditorRunMessage)
+\r t
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/BIAS/ibias_cascode/adexl/results/data/.tmpADEDir_yaowenf/BIAS:ibias_cascode:1/simulation/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:19:21 2026
+\o WARNING (OSSHNL-225): The design variable 'temperature', used in the last netlisting session in the current
+\o run directory is not used in this netlisting session. The netlist(s) generated
+\o in the last netlisting session cannot be reused for incremental netlisting.
+\o Therefore re-netlisting the design.
+\o 
+\o End netlisting Mar 10 22:19:21 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(30)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(31)
+\# Current Window: window(32)
+\a hiCloseWindow(swindow(17))
+\# Current Window: window(30)
+\r t
+\a _hiSetCurrentWinNum(30)
+\r t
+\a _hiSetCurrentWinNum(30)
+\r t
+\a hiCloseWindow(window(30))
+\# Current Window: window(29)
+\r t
+\a _hiSetCurrentWinNum(29)
+\r t
+\a hiSetCurrentWindow(window(26))
+\# Current Window: window(26)
+\r t
+\a hiRaiseWindow(3 t)
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: adexl-schematic
+\r t
+\a hiZoomOutAtMouse()
+\i -0.125:-1.125
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.025:-1.1375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf modify_plot
+\a addPoint(hiGetCommandPoint())
+\i 0.025:-1.13125
+\a hiZoomIn(window(3) list(-4.9:-3.6625 5.8:1.7375))
+\r t
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i -0.125:-1.5625
+\r t
+\a schSingleSelectPt()
+\i -1.5:-1.375
+\i -1.5:-1.375
+\r t
+\a astiCancelSelect(hiGetCurrentWindow())
+\r unbound
+\a schSingleSelectPt()
+\i -1.5625:-1.3125
+\r t
+\a schSingleSelectPt()
+\i -0.3125:-1.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "100u M")
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.875
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "100u M")
+\r t
+\a schSingleSelectPt()
+\i 0.1875:-0.75
+\r nil
+\a hiRaiseWindow(26 t)
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(0 0 )" 0)
+\r t
+\a _axlDataViewSelect(axlDataViewForm1->axlDataViewWidget1 1 "remove" "'(0 0 )" 1)
+\r t
+\# Current Window: window(26)
+\r t
+\a hiCloseWindow(window(26))
+\# Displaying modal dbox "sevblockingDialogBox", title "ADE (G)XL Save Setup"
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiDBoxOK(sevblockingDialogBox)
+\r t
+\# ADE XL session 'session1' closed on Tue Mar 10 22:22:11 2026 
+\w Qt Warning: setNativeLocks failed: "Resource temporarily unavailable"
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: Schematics
+\r t
+\w Qt Warning: setNativeLocks failed: "Resource temporarily unavailable"
+\a _hiSetCurrentWinNum(3)
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: Schematics
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.3125
+\r t
+\# Thread usage report: 55 active threads, active load 1.40 at UTC 2026.03.10 22:22:17.491
+\a hiZoomInAtMouse()
+\i -0.3125:-1.3125
+\r t
+\a hiZoomInAtMouse()
+\i -0.3125:-1.3125
+\r t
+\a schSingleSelectPt()
+\i -0.3125:-1.3125
+\r t
+\a _deUpdateMenu('schematicTools 3)
+\r t
+\a deInstallApp(getCurrentWindow() "analogArtist-Schematic")
+\# Current Window: window(33)
+\r t
+\a sevLoadState('sevSession15)
+\# [22:22:26.100115] Periodic Lic check successful
+\# [22:22:26.100203] Feature usage summary:
+\# [22:22:26.100203] 111
+\# [22:22:26.100210] Virtuoso_ADE_Explorer
+\# [22:22:26.100210] Virtuoso_Schematic_Editor_XL
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiiSetCurrentForm('sevLoadForm15)
+\r t
+\a sevLoadForm15->optionCellView->value="Cellview"
+\r "Cellview"
+\a hiFormDone(sevLoadForm15)
+\r t
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:22:35 2026
+\o End netlisting Mar 10 22:22:35 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o *Warning*	Additional design variables have been found during netlisting.
+\o  		A value is necessary for successful simulation.
+\o 		To simulate, assign values to all design variables with 
+\o 		the Variables->Edit... menu, and use "Netlist and Run".
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(34)
+\o INFO (ADE-3069): Errors encountered during simulation. For more information, see the log files
+\o         accessible from the Simulation -> Output Log menu.
+\a hiCloseWindow(window(34))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a sevTableSelectRows(sevWindowForm15->varListBox 1)
+\r t
+\a (sevDeleteSelectedVars 'sevSession15)
+\r t
+\a sevClickTableHeader(sevWindowForm15->varListBox 1)
+\r t
+\a (_sevVarSortCallback 'sevSession15)
+\r (("VDDA" ""))
+\a sevTableSelectRows(sevWindowForm15->varListBox 0)
+\r t
+\a sevSetTableItem(sevWindowForm15->varListBox 0 1 "3.3")
+\r t
+\a sevTableSelectRows(sevAnaForm15->anaListBox 0)
+\r t
+\a (sevEditSelectedAnas 'sevSession15)
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a _asii_spectre14_analysis_form->dc_designVar->value="VDDA"
+\r "VDDA"
+\a hiFormDone(_asii_spectre14_analysis_form)
+\r t
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:22:57 2026
+\o WARNING (OSSHNL-225): The design variable 'vdd', used in the last netlisting session in the current
+\o run directory is not used in this netlisting session. The netlist(s) generated
+\o in the last netlisting session cannot be reused for incremental netlisting.
+\o Therefore re-netlisting the design.
+\o 
+\o End netlisting Mar 10 22:22:57 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(35)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(36)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(37)
+\a hiCloseWindow(swindow(19))
+\# Current Window: window(35)
+\r t
+\a _hiSetCurrentWinNum(35)
+\r t
+\a _hiSetCurrentWinNum(35)
+\r t
+\a hiCloseWindow(window(35))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiZoomOutAtMouse()
+\i 0:-0.8125
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.025:-0.88125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.025:-0.88125
+\a hiZoomIn(window(3) list(-1.89375:-2.1 3.29375:0.4875))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.15:-0.05
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.15:-0.05
+\a hiZoomIn(window(3) list(-2.03125:-2.15 3.15625:0.4375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.06875:-0.9
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.06875:-0.9
+\a hiZoomIn(window(3) list(-2.21875:-2.7875 2.96875:-0.2))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.13125:-0.6125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.13125:-0.6125
+\a hiZoomIn(window(3) list(-1.86875:-1.85 3.31875:0.7375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.225:0.3625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.225:0.3625
+\a hiZoomIn(window(3) list(-2.4375:-1.83125 2.75:0.75625))
+\r t
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i -1.125:-0.625
+\r t
+\a hiDynamicPanGrabbing()
+\i -1.41875:-0.55
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -1.4125:-0.55
+\a hiZoomIn(window(3) list(-4.075:-2.2375 6.3:2.9375))
+\r t
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i -0.75:0.125
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.05:0.55
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.05:0.55
+\a hiZoomIn(window(3) list(-2.10625:-0.7125 3.08125:1.875))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.55625:0.3875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.55625:0.3875
+\a hiZoomIn(window(3) list(-2.9:-1.06875 2.2875:1.51875))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -2.375:0.5
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.28125:0.7625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.28125:0.7625
+\a hiZoomIn(window(3) list(-2.3875:-0.875 2.8:1.7125))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.25625:0.075
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.25625:0.0875
+\a hiZoomIn(window(3) list(-2.41875:-1.85625 2.76875:0.73125))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.075:-1.38125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.075:-1.38125
+\a hiZoomIn(window(3) list(-2.4375:-2.25625 2.75:0.33125))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.875
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.175:-0.84375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.175:-0.84375
+\a hiZoomIn(window(3) list(-2.375:-1.15 2.8125:1.4375))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -0.25:0.3125
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.125
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.90625:-0.48125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.90625:-0.48125
+\a hiZoomIn(window(3) list(-2.4375:-1.8875 2.75:0.7))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5625:-1.3125
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.81875:-1.4
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.81875:-1.4
+\a hiZoomIn(window(3) list(-2.025:-2.6375 3.1625:-0.05))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.1125:-2.01875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.1125:-2.01875
+\a hiZoomIn(window(3) list(-1.75625:-3.0875 3.43125:-0.5))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -0.125:-2.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "1-0k Ohms")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "100k Ohms")
+\r t
+\a schSingleSelectPt()
+\i -1.25:-2.4375
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:26:18 2026
+\o End netlisting Mar 10 22:26:18 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          1.0s (18.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(38)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(39)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(40)
+\a hiCloseWindow(swindow(20))
+\# Current Window: window(38)
+\r t
+\a _hiSetCurrentWinNum(38)
+\r t
+\a _hiSetCurrentWinNum(38)
+\r t
+\a hiCloseWindow(window(38))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.05:-0.7125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.05:-0.7125
+\a hiZoomIn(window(3) list(-2.4125:-2.35625 2.775:0.23125))
+\r t
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i -0.0625:-0.5625
+\r t
+\a hiZoomInAtMouse()
+\i 0.375:-0.9375
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.325:-0.48125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.325:-0.49375
+\a hiZoomIn(window(3) list(-2.23125:-1.95625 2.95625:0.63125))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.85:-0.075
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.84375:-0.075
+\a hiZoomIn(window(3) list(-2.31875:-1.60625 2.86875:0.98125))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.5125:-0.70625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.5125:-0.70625
+\a hiZoomIn(window(3) list(-2.33125:-2.2375 2.85625:0.35))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.89375:-0.9
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.89375:-0.9
+\a hiZoomIn(window(3) list(-2.375:-2.68125 2.8125:-0.09375))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5:-1.9375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "20u M")
+\r t
+\a schSingleSelectPt()
+\i -0.1875:-1.875
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.875
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "20u M")
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "20u M")
+\r t
+\a schSingleSelectPt()
+\i -1.5:-1.375
+\r t
+\a schSingleSelectPt()
+\i -1.5:-1.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "20u M")
+\r t
+\a schSingleSelectPt()
+\i 0.5:-1.9375
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:28:11 2026
+\o End netlisting Mar 10 22:28:11 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(41)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(42)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(43)
+\a hiCloseWindow(swindow(21))
+\# Current Window: window(41)
+\r t
+\a _hiSetCurrentWinNum(41)
+\r t
+\a _hiSetCurrentWinNum(41)
+\r t
+\a hiCloseWindow(window(41))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.375
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.1:-0.7875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.1:-0.7875
+\a hiZoomIn(window(3) list(-2.30625:-1.525 2.88125:1.0625))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.1625:-0.10625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.1625:-0.10625
+\a hiZoomIn(window(3) list(-2.15:-0.86875 3.0375:1.71875))
+\r t
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i -0.3125:-0.3125
+\r t
+\a hiZoomInAtMouse()
+\i -0.3125:-0.3125
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.25:-0.375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.25:-0.375
+\a hiZoomIn(window(3) list(-2.125:-1.64375 3.0625:0.94375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.375:-0.8875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.375:-0.8875
+\a hiZoomIn(window(3) list(-2.55625:-2.50625 2.63125:0.08125))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5625:-1.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i -1.5:-1.9375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i -0.3125:-1.9375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i -0.3125:-1.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "3" 1 "10u M")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "4" 1 "4")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.875
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "4" 1 "4")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a schSingleSelectPt()
+\i -0.75:-2.1875
+\r nil
+\a schSingleSelectPt()
+\i -0.1875:-2.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "1M Ohms")
+\r t
+\a schSingleSelectPt()
+\i -2.0625:-3.1875
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:30:05 2026
+\o End netlisting Mar 10 22:30:05 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(44)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(45)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(46)
+\a hiCloseWindow(swindow(22))
+\# Current Window: window(44)
+\r t
+\a _hiSetCurrentWinNum(44)
+\r t
+\a _hiSetCurrentWinNum(44)
+\r t
+\a hiCloseWindow(window(44))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -0.1875:-2.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "600k Ohms")
+\r t
+\a schSingleSelectPt()
+\i -1.75:-3.4375
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:30:44 2026
+\o End netlisting Mar 10 22:30:44 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(47)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(48)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(49)
+\a hiCloseWindow(swindow(23))
+\# Current Window: window(47)
+\r t
+\a _hiSetCurrentWinNum(47)
+\r t
+\a _hiSetCurrentWinNum(47)
+\r t
+\a hiCloseWindow(window(47))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "4" 1 "1")
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.9375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "4" 1 "1")
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:31:21 2026
+\o End netlisting Mar 10 22:31:21 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(50)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(51)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(52)
+\a hiCloseWindow(swindow(24))
+\# Current Window: window(50)
+\r t
+\a _hiSetCurrentWinNum(50)
+\r t
+\a _hiSetCurrentWinNum(50)
+\r t
+\a hiCloseWindow(window(50))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.35625:-1.86875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.35625:-1.86875
+\a hiZoomIn(window(3) list(-2.15625:-2.8375 3.03125:-0.25))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.30625:-0.825
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.30625:-0.825
+\a hiZoomIn(window(3) list(-2.23125:-1.90625 2.95625:0.68125))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5625:-1.375
+\r t
+\a schSingleSelectPt()
+\i -1.5625:-1.8125
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.50625:-0.55625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.50625:-0.55625
+\a hiZoomIn(window(3) list(-2.29375:-1.14375 2.89375:1.44375))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -0.3125:0.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "50u M")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a schSingleSelectPt()
+\i -1.5625:0.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "50u M")
+\r t
+\a hiDynamicPanGrabbing()
+\i -1.19375:0.8125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -1.19375:0.8125
+\a hiZoomIn(window(3) list(-2.3125:-0.75625 2.875:1.83125))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5:1.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "50u M")
+\r t
+\a schSingleSelectPt()
+\i -0.25:1.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "50u M")
+\r t
+\a schSingleSelectPt()
+\i 0.75:1.0625
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "100u M")
+\r t
+\a schSingleSelectPt()
+\i 0.6875:0.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "100u M")
+\r t
+\a schSingleSelectPt()
+\i 1.375:0.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "100u M")
+\r t
+\a schSingleSelectPt()
+\i 1.4375:1.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "100u M")
+\r t
+\a schSingleSelectPt()
+\i -1:0.625
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:34:14 2026
+\o End netlisting Mar 10 22:34:14 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(53)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(54)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(55)
+\a hiSetCurrentWindow(window(54))
+\# Current Window: window(54)
+\r t
+\a hiCloseWindow(swindow(25))
+\# Current Window: window(53)
+\r t
+\a _hiSetCurrentWinNum(53)
+\r t
+\a hiCloseWindow(window(53))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -1.5625:1.125
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.98125:0.6625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.98125:0.6625
+\a hiZoomIn(window(3) list(-2.20625:-1.44375 2.98125:1.14375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.6:-0.3875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.6:-0.3875
+\a hiZoomIn(window(3) list(-2.13125:-2.33125 3.05625:0.25625))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.4125:-1.325
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.4125:-1.325
+\a hiZoomIn(window(3) list(-2.06875:-3.05625 3.11875:-0.46875))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -0.125:-2.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "100k Ohms")
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:35:34 2026
+\o End netlisting Mar 10 22:35:34 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(56)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(57)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(58)
+\a hiCloseWindow(swindow(26))
+\# Current Window: window(56)
+\r t
+\a _hiSetCurrentWinNum(56)
+\r t
+\a _hiSetCurrentWinNum(56)
+\r t
+\a hiCloseWindow(window(56))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "200k Ohms")
+\r t
+\a schSingleSelectPt()
+\i -1.0625:-2.5625
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:36:03 2026
+\o End netlisting Mar 10 22:36:03 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(59)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(60)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(61)
+\a hiCloseWindow(swindow(27))
+\# Current Window: window(59)
+\r t
+\a _hiSetCurrentWinNum(59)
+\r t
+\a _hiSetCurrentWinNum(59)
+\r t
+\a hiCloseWindow(window(59))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.86875:-0.925
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.86875:-0.925
+\a hiZoomIn(window(3) list(-2.31875:-2.54375 2.86875:0.04375))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5:-1.3125
+\r t
+\a hiDynamicPanGrabbing()
+\i -1.00625:-1
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -1.00625:-1
+\a hiZoomIn(window(3) list(-2.19375:-1.86875 2.99375:0.71875))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.1875
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "50u M")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.625
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "50u M")
+\r t
+\a schSingleSelectPt()
+\i -1.875:-0.9375
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:37:37 2026
+\o End netlisting Mar 10 22:37:37 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          1.0s (18.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(62)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(63)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(64)
+\a hiCloseWindow(swindow(28))
+\# Current Window: window(62)
+\r t
+\a _hiSetCurrentWinNum(62)
+\r t
+\a _hiSetCurrentWinNum(62)
+\r t
+\a hiCloseWindow(window(62))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.4125:-0.49375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.41875:-0.49375
+\a hiZoomIn(window(3) list(-2.2375:-1.925 2.95:0.6625))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "100u M")
+\r t
+\a schSingleSelectPt()
+\i -1.1875:-0.75
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "100u M")
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevStopEngine('sevSession15)
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:38:17 2026
+\o End netlisting Mar 10 22:38:17 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(65)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(66)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(67)
+\a hiCloseWindow(swindow(29))
+\# Current Window: window(65)
+\r t
+\a _hiSetCurrentWinNum(65)
+\r t
+\a _hiSetCurrentWinNum(65)
+\r t
+\a hiCloseWindow(window(65))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i -1.1875:-0.6875
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i 0.25:-0.8125
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:39:19 2026
+\o End netlisting Mar 10 22:39:19 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(68)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(69)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(70)
+\a hiCloseWindow(swindow(30))
+\# Current Window: window(68)
+\r t
+\a _hiSetCurrentWinNum(68)
+\r t
+\a _hiSetCurrentWinNum(68)
+\r t
+\a hiCloseWindow(window(68))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.1875
+\r t
+\a hiDynamicPanGrabbing()
+\i -1.5:-1.39375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -1.5:-1.38125
+\a hiZoomIn(window(3) list(-2.21875:-2.33125 2.96875:0.25625))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5:-1.375
+\r t
+\a geScroll(nil "e" nil)
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.05:-1.15
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.05625:-1.15
+\a hiZoomIn(window(3) list(-0.7375:-1.5125 4.45:1.075))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.38125:-0.475
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.38125:-0.475
+\a hiZoomIn(window(3) list(-2.14375:-0.875 3.04375:1.7125))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5:0.375
+\r t
+\a schSingleSelectPt()
+\i 0.75:0.375
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.825:-0.175
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.825:-0.175
+\a hiZoomIn(window(3) list(-2.375:-1.95625 2.8125:0.63125))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.89375:-0.8625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.9:-0.8625
+\a hiZoomIn(window(3) list(-2.45625:-2.6625 2.73125:-0.075))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5:-1.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "50u M")
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "200u M")
+\r t
+\a schSingleSelectPt()
+\i -1.5625:-1.9375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "50u M")
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.875
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "200u M")
+\r t
+\a schSingleSelectPt()
+\i -1.375:-2.3125
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:41:01 2026
+\o End netlisting Mar 10 22:41:01 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(71)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(72)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(73)
+\a hiCloseWindow(swindow(31))
+\# Current Window: window(71)
+\r t
+\a _hiSetCurrentWinNum(71)
+\r t
+\a _hiSetCurrentWinNum(71)
+\r t
+\a hiCloseWindow(window(71))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.475:-0.36875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.48125:-0.36875
+\a hiZoomIn(window(3) list(-2.20625:-2.2 2.98125:0.3875))
+\r t
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i 0.375:-1.25
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.2125:-1.81875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.21875:-1.725
+\a hiZoomIn(window(3) list(-5.03125:-3.725 5.34375:1.45))
+\r t
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i 0.25:-1.75
+\r t
+\a hiZoomInAtMouse()
+\i 0.25:-1.75
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.26875:-1.5
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.26875:-1.5
+\r t
+\r t
+\a hiZoomIn(window(3) list(-1.08125:-1.775 1.51875:-0.48125))
+\r t
+\a hiZoomOutAtMouse()
+\i 0.125:-1.0625
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.06875:-0.85
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.06875:-0.85
+\a hiZoomIn(window(3) list(-2.29375:-1.5625 2.91875:1.0375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.43125:-0.1375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.43125:-0.1375
+\a hiZoomIn(window(3) list(-1.9125:-1.9125 3.3:0.6875))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.45625:-0.64375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.45625:-0.64375
+\a hiZoomIn(window(3) list(-2.375:-2.55625 2.8375:0.04375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.31875:-1.3375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.31875:-1.3375
+\a hiZoomIn(window(3) list(-2.43125:-3.18125 2.78125:-0.58125))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.84375:-1.075
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.84375:-1.06875
+\a hiZoomIn(window(3) list(-2.33125:-2.40625 2.88125:0.19375))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5:-1.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "3" 1)
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.75
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "100u M")
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:42:37 2026
+\o End netlisting Mar 10 22:42:37 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(74)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(75)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(76)
+\a hiCloseWindow(swindow(32))
+\# Current Window: window(74)
+\r t
+\a _hiSetCurrentWinNum(74)
+\r t
+\a _hiSetCurrentWinNum(74)
+\r t
+\a hiCloseWindow(window(74))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiZoomOutAtMouse()
+\i -0.125:-0.375
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.1625:0.23125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.1625:0.225
+\a hiZoomIn(window(3) list(-4.3625:-3.325 6.0625:1.875))
+\r t
+\r t
+\r t
+\a hiZoomInAtMouse()
+\i -1.4375:1
+\r t
+\a schSingleSelectPt()
+\i -1.5:1.0625
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "20u M")
+\r t
+\a schSingleSelectPt()
+\i -0.25:1.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "20u M")
+\r t
+\a schSingleSelectPt()
+\i -1.5625:0.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "20u M")
+\r t
+\a schSingleSelectPt()
+\i -0.25:0.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "20u M")
+\r t
+\a hiDynamicPanGrabbing()
+\i -1.4:-0.51875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -1.4:-0.51875
+\a hiZoomIn(window(3) list(-2.975:-2.05 2.2375:0.55))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.5625:-1.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i -1.5625:-1.8125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "10u M")
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 0)
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "1u M")
+\r t
+\a schSingleSelectPt()
+\i -0.0625:-0.75
+\r nil
+\a hiDynamicPanGrabbing()
+\i 0.13125:-0.7625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.13125:-0.7625
+\a hiZoomIn(window(3) list(-2.5625:-2.3 2.65:0.3))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "2" 1 "10u M")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "4" 1 "8")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "2" 1 "10u M")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a schSingleSelectPt()
+\i -0.25:-1.875
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "4" 1 "8")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "2" 1 "10u M")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.8375:-1.7375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.83125:-1.7375
+\a hiZoomIn(window(3) list(-2.425:-2.75625 2.7875:-0.15625))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.1375:-1.18125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.1375:-1.18125
+\a hiZoomIn(window(3) list(-1.6875:-1.80625 3.525:0.79375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.6875:-0.18125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.6875:-0.18125
+\a hiZoomIn(window(3) list(-1.4625:-1.23125 3.75:1.36875))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -0.25:0.375
+\r t
+\a schSingleSelectPt()
+\i 0.75:0.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "4" 1 "2")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "2" 1 "20u M")
+\r t
+\a schSingleSelectPt()
+\i 0.75:1.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "4" 1 "2")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "2" 1 "20u M")
+\r t
+\a schSingleSelectPt()
+\i 1.4375:1.125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "4" 1 "2")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "2" 1 "20u M")
+\r t
+\a schSingleSelectPt()
+\i 1.4375:0.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "4" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "4" 1 "2")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "2" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "2" 1 "20u M")
+\r t
+\a schSingleSelectPt()
+\i 0.3125:-0.5625
+\r nil
+\a hiDynamicPanGrabbing()
+\i 0.09375:-0.5875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.09375:-0.5875
+\a hiZoomIn(window(3) list(-2.0625:-1.6625 3.15:0.9375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.0625:-1.025
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.0625:-1.025
+\a hiZoomIn(window(3) list(-2.19375:-2.06875 3.01875:0.53125))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.05625:-1.6875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.05625:-1.6875
+\a hiZoomIn(window(3) list(-2.1875:-2.6875 3.025:-0.0875))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.36875:-2.23125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.36875:-2.23125
+\a hiZoomIn(window(3) list(-2.2125:-3.25 3:-0.65))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -0.1875:-2.375
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "700k Ohms")
+\r t
+\a schSingleSelectPt()
+\i -1.375:-2.3125
+\r nil
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:55:40 2026
+\o End netlisting Mar 10 22:55:40 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(77)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(78)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(79)
+\a hiCloseWindow(window(77))
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.89375:-1.04375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.89375:-1.04375
+\a hiZoomIn(window(3) list(-2.49375:-2.625 2.71875:-0.025))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.68125:-0.4875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.68125:-0.4875
+\a hiZoomIn(window(3) list(-2.0625:-1.9625 3.15:0.6375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.0125:0.10625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.0125:0.10625
+\a hiZoomIn(window(3) list(-2.13125:-2.2625 3.08125:0.3375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.00625:-0.53125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.00625:-0.5375
+\a hiZoomIn(window(3) list(-2.175:-2.80625 3.0375:-0.20625))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.0125:-1.21875
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.01875:-1.225
+\a hiZoomIn(window(3) list(-2.20625:-3.10625 3.00625:-0.50625))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -0.125:-2.3125
+\r t
+\a _oiSelectItem(dwindow('oiAssistant1) "1" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant1) "1" 1 "600k Ohms")
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
+\a hiCloseWindow(swindow(33))
+\r t
+\a hiSetCurrentWindow(window(33))
+\# Current Window: window(33)
+\r t
+\a sevNetlistAndRun('sevSession15)
+\o Delete psf data in /home/yaowenf/bias/AMS_35_V4_MINIMAL/Sim/ibias_cascode/spectre/schematic/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 10 22:56:35 2026
+\o End netlisting Mar 10 22:56:35 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   18
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\r t
+\# Current Window: window(80)
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(81)
+\a rdbLoadResults("sevSession15" "./Sim/ibias_cascode/spectre/schematic/psf")
+\r t
+\# Current Window: window(82)
+\a hiCloseWindow(swindow(34))
+\# Current Window: window(80)
+\r t
+\a _hiSetCurrentWinNum(80)
+\r t
+\a _hiSetCurrentWinNum(80)
+\r t
+\a hiCloseWindow(window(80))
+\# Current Window: window(33)
+\r t
+\a _hiSetCurrentWinNum(33)
+\r t
+\a hiCloseWindow(swindow(18))
+\# Displaying modal dbox "sevblockingDialogBox", title "Save State Query"
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiDBoxOK(sevblockingDialogBox)
+\r t
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiiSetCurrentForm('sevSaveForm15)
+\r t
+\a hiFormDone(sevSaveForm15)
+\# Displaying modal dbox "sevblockingDialogBox", title "Warning"
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a hiDBoxOK(sevblockingDialogBox)
+\r t
+\w *WARNING* LIB MINIMAL_CORE from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 64 redefines
+\w LIB MINIMAL_CORE from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_IO from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 65 redefines
+\w LIB MINIMAL_IO from the same file (defined earlier.)
+\w *WARNING* LIB MINIMAL_TOP from File /home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib Line 66 redefines
+\w LIB MINIMAL_TOP from the same file (defined earlier.)
+\w *WARNING* The directory: '/home/saul/projects/AMS35_DIG/test_mix/virtuoso/COUNTER_TESTS' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'COUNTER_TESTS'.
+\w *WARNING* The directory: '/home/saul/projects/TEST_AMS45_V4/TEST_PDK' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'TEST_PDK'.
+\w *WARNING* The directory: '/opt/pdk/ams/examples/EXAMPLES_PowerSupplyC35B3_IC6/EXAMPLES_IO_C35B3_IC6' does not exist
+\w 	but was defined in libFile '/home/yaowenf/bias/AMS_35_V4_MINIMAL/cds.lib' for Lib 'EXAMPLES_IO_C35B3_IC6'.
+\r t
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\w Qt Warning: setNativeLocks failed: "Resource temporarily unavailable"
+\# Current Window: window(15)
+\r t
+\a _hiSetCurrentWinNum(15)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: Schematics
+\r t
+\a hiDynamicPanGrabbing()
+\i 0.1125:-1.09375
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i 0.10625:-1.075
+\a hiZoomIn(window(3) list(-2.2375:-2.48125 2.975:0.2375))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.01875:-0.4125
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.0125:-0.4125
+\a hiZoomIn(window(3) list(-2.45625:-1.9 2.75625:0.81875))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.1875
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.425:-1.25625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.41875:-1.2625
+\a hiZoomIn(window(3) list(-2.2375:-2.80625 2.975:-0.0875))
+\r t
+\r t
+\r t
+\a schSingleSelectPt()
+\i -0.3125:-1.375
+\r t
+\a schSingleSelectPt()
+\i -1.5:-1.4375
+\r t
+\a hiZoomOutAtMouse()
+\i -1.0625:-1.0625
+\r t
+\a hiDynamicPanGrabbing()
+\i -0.7:-0.825
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -0.7:-0.83125
+\a hiZoomIn(window(3) list(-3.35625:-3.18125 7.08125:2.25625))
+\r t
+\r t
+\r t
+\a hiDynamicPanGrabbing()
+\i -1.525:0.65625
+\p hitkit: ams_4.10  Tech: c35b4c3  User: yaowenf 
+\a addPoint(hiGetCommandPoint())
+\i -1.53125:0.65625
+\a hiZoomIn(window(3) list(-3.6375:-3.475 6.8:1.9625))
+\r t
+\r t
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "ibias_cascode schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: BIAS:ibias_cascode:schematic  Application: Schematics
+\o INFO (SCH-1181): "BIAS ibias_cascode schematic" saved.
+\r t
